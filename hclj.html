@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>合作咨询直通车</title>	
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="format-detection" content="telephone=no,email=no,adress=no,date=no">
+		<!--[if lt IE 9]>
+	         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	    <![endif]-->
+	    <link rel="stylesheet" href="css/reset.css" />
+	    <link rel="stylesheet" href="css/style.css" />
+	      
+	</head>
+	<body>
+		<div id="box_hclj">
+			<section class=" box_banner">
+				<dl class="banner bor_box">
+					<dt class="banner_img bg_img"></dt>
+					<dd class="banner_txt bor_box"><span>合作咨询直通车</span></dd>
+				</dl>
+			</section>
+			<form class="form_hclj" action="" method="post">
+				<section>
+					<h2 class="title_invest bg_img bor_box">我要投资：</h2>
+					<ul class="clearfix">
+						<li class="fl item_list bor_box">
+							<dl>
+								<dt class="bg_img img_fund"></dt>
+								<dd>私募基金</dd>
+							</dl>
+						</li>
+						<li class="fl item_list bor_box">
+							<dl>
+								<dt class="bg_img img_sfm"></dt>
+								<dd>小额理财</dd>
+							</dl>
+						</li>
+						<li class="fl item_list bor_box mar_no">
+							<dl>
+								<dt class="bg_img img_other"></dt>
+								<dd>其他项目</dd>
+							</dl>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="title_invest bg_img bor_box">我要应聘：</h2>
+					<ul class="clearfix apply">
+						<li class="fl item_list bor_box">
+							<dl>
+								<dt class="bg_img img_wealth"></dt>
+								<dd>财富管理</dd>
+							</dl>
+						</li>
+						<li class="fl item_list bor_box">
+							<dl>
+								<dt class="bg_img img_assets"></dt>
+								<dd>资产管理</dd>
+							</dl>
+						</li>
+						<li class="fl item_list bor_box mar_no">
+							<dl>
+								<dt class="bg_img img_media"></dt>
+								<dd>文化传媒</dd>
+							</dl>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="title_invest bg_img bor_box">我要合作：</h2>
+					<ul class="clearfix commpare">
+						<li class="fl item_list bor_box">
+							<dl>
+								<dt class="bg_img img_finance"></dt>
+								<dd>金融业务</dd>
+							</dl>
+						</li>
+						<li class="fl item_list bor_box">
+							<dl>
+								<dt class="bg_img img_hclj"></dt>
+								<dd>品牌传播</dd>
+							</dl>
+						</li>
+					</ul>
+					
+					<ul>
+						<li>
+							<dl>
+								<dt><h3 class="head_coop">需求详细描述：</h3></dt>
+								<dd><textarea class="input_txt input_textarea  bor_box" placeholder="限5-200字"></textarea></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><h3 class="head_coop">联系方式：</h3></dt>
+								<dd><input class="input_txt  bor_box" type="text" value=""  placeholder="请输入您的手机号"/></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><h3 class="head_coop">需求详细描述：</h3></dt>
+								<dd><input class="input_txt  bor_box" type="text" value=""  placeholder="请输入您的微信号"/></dd>
+							</dl>
+						</li>
+					</ul>
+					<p class="tips">我们将于24小时之内安排专人为您提供解决方案！如果您的提案足够真实、走心，也可能获得虎哥的亲自指点哦！ </p>
+					<p><input class="btn_sub" type="submit" name="" value="提交" /></p>
+				</section>
+			</form>
+		</div>
+		<div class="box_layer">
+			<p>请选择要咨询的内容！</p>
+		</div>
+		<script type="text/javascript" src="js/jquery2.1.1.min.js" ></script>
+	    <script type="text/javascript" src="js/rem.js" ></script>
+	    <script>
+	    	$(function(){
+	    		$(".item_list").click(function(){
+	    			$(this).addClass("active").siblings().removeClass("active");
+	    			$(this).parents("section").siblings().find(".item_list").removeClass("active");
+	    		});
+	    		$(".btn_sub").click(function(){
+	    			var ele=$(".form_hclj").find("li.active").length;
+	    			if(ele>0){
+	    				alert("succsee!");
+	    			}else{
+	    				$(".box_layer").fadeIn();
+	    			}
+	    			setTimeout(function(){
+	    				$(".box_layer").fadeOut();
+	    			},2000);
+	    			return false;
+	    		});
+	    	})
+	    </script>
+	</body>
+</html>
