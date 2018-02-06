@@ -21,7 +21,7 @@ body {
 	max-width: 800px;
 	margin: 0 auto;
 	padding-bottom: 1rem;
-	background: url(../img/bg_hclj.png) no-repeat;
+	background: url(../img/bg_hclj.jpg) no-repeat;
 	background-size: 100% auto;
 	padding: 0 .3rem .5rem;
 	-webkit-box-sizing: border-box;
@@ -193,5 +193,5 @@ body {
 .apply .item_list .bg_img{margin-bottom: 0;}
 .commpare .bg_img{width: 1.22rem;margin-bottom: 0;}
 
-.box_layer{display: none; position: fixed;top: 50%;left: 50%;margin-top: -.9rem;margin-left: -2.7rem; width: 5.4rem;height: 1.8rem;line-height: 1.8rem;text-align: center;background: #fff;color: #b83535;font-size: .3rem;}
+.box_layer{display: none;z-index:999; position: fixed;top: 50%;left: 50%;margin-top: -.9rem;margin-left: -2.7rem; width: 5.4rem;height: 1.8rem;line-height: 1.8rem;text-align: center;background: #fff;color: #b83535;font-size: .3rem;}
 .box_layer p{display: inline;line-height: 1.2;}

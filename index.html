@@ -101,7 +101,7 @@
 						</li>
 						<li>
 							<dl>
-								<dt><h3 class="head_coop">需求详细描述：</h3></dt>
+								<dt><h3 class="head_coop">微信号：：</h3></dt>
 								<dd><input class="input_txt  bor_box" type="text" value=""  placeholder="请输入您的微信号"/></dd>
 							</dl>
 						</li>
@@ -112,7 +112,7 @@
 			</form>
 		</div>
 		<div class="box_layer">
-			<p>请选择要咨询的内容！</p>
+			<p></p>
 		</div>
 		<script type="text/javascript" src="js/jquery2.1.1.min.js" ></script>
 	    <script type="text/javascript" src="js/rem.js" ></script>
@@ -125,18 +125,25 @@
 	    		$(".btn_sub").click(function(){
 	    			var ele=$(".form_hclj").find("li.active").length;
 	    			if(ele>0){
-	    				alert("succsee!");
+	    				
 	    				setTimeout(function(){
 		    				window.location.href="html/succsee.html";
-		    			},2000);
+		    			},500);
 	    			}else{
-	    				$(".box_layer").fadeIn();
+	    				showLayer("请选择要咨询的内容！");
 	    			}
 	    			setTimeout(function(){
 	    				$(".box_layer").fadeOut();
 	    			},2000);
+	    			
 	    			return false;
 	    		});
+	    		
+	    		
+	    		function showLayer(txt){
+	    			$(".box_layer").find("p").html(txt);
+	    			$(".box_layer").fadeIn();
+	    		}
 	    	})
 	    </script>
 	</body>
