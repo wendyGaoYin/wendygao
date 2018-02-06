@@ -20,10 +20,12 @@ body {
 	width: 100%;
 	max-width: 800px;
 	margin: 0 auto;
-	padding-bottom: 1rem;
 	background: url(../img/bg_hclj.jpg) no-repeat;
 	background-size: 100% auto;
-	padding: 0 .3rem .5rem;
+}
+.main{
+	width: 100%;
+	padding: 0 .3rem;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -50,22 +52,23 @@ body {
 #succsee .tips_anser{font-size: .3rem;}
 .box_anser{width: 5rem;height: 3.2rem;margin: 0 auto 0;}
 .box_banner {
-	height: 3.68rem;
-	border-bottom: 1px solid #fff;
 	margin-bottom: .5rem;
 }
 
 .banner {
-	width: 3.74rem;
+	width: 100%;
 	height: 3.2rem;
 	margin: 0 auto;
 	padding-top: .8rem;
+	height: 3.68rem;
+	border-bottom: 1px solid #fff;
 }
 
 .banner_img {
 	width: 3.74rem;
 	height: 1.78rem;
 	background-position: 0 -2.1rem;
+	margin: 0 auto;
 }
 .img_fund{background-position: 0 0;}
 .img_sfm{background-position:-1.2rem 0;}
@@ -120,7 +123,7 @@ body {
 	line-height: .8rem;
 	font-size: .36rem;
 	color: #fff;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 .head_coop {
@@ -193,5 +196,5 @@ body {
 .apply .item_list .bg_img{margin-bottom: 0;}
 .commpare .bg_img{width: 1.22rem;margin-bottom: 0;}
 
-.box_layer{display: none;z-index:999; position: fixed;top: 50%;left: 50%;margin-top: -.9rem;margin-left: -2.7rem; width: 5.4rem;height: 1.8rem;line-height: 1.8rem;text-align: center;background: #fff;color: #b83535;font-size: .3rem;}
+.box_layer{display: none; position: fixed;top: 50%;left: 50%;margin-top: -.9rem;margin-left: -2.7rem; width: 5.4rem;height: 1.8rem;line-height: 1.8rem;text-align: center;background: #fff;color: #b83535;font-size: .3rem;}
 .box_layer p{display: inline;line-height: 1.2;}
